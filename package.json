@@ -1,0 +1,28 @@
+{
+    "name": "dashushouji",
+    "version": "1.0.0",
+    "description": "",
+    "main": "",
+    "scripts": {
+        "gulp": "gulp"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zhouhuafei/dashushouji.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/zhouhuafei/dashushouji/issues"
+    },
+    "homepage": "https://github.com/zhouhuafei/dashushouji#readme",
+    "devDependencies": {
+        "babel-eslint": "^8.0.2",
+        "babel-preset-env": "^1.6.0",
+        "gulp": "^3.9.1",
+        "gulp-sass": "^3.1.0"
+    },
+    "dependencies": {
+        "gulp-autoprefixer": "^4.1.0"
+    }
+}
