@@ -11,6 +11,7 @@ body {
     line-height: 1.5;
     color: #333333;
     background: #ffffff;
+    overflow-x: hidden;
 
 }
 
@@ -279,7 +280,10 @@ img {
     padding-top: 20px;
     padding-left: 20px;
 }
-
+.shouye .content dl:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
 .shouye .content dl dt img {
     margin-bottom: 10px;
 }
@@ -309,6 +313,7 @@ img {
     overflow: hidden;
     padding: 0 15px;
 }
+
 
 /**/
 .shouye .brief dl {
@@ -406,8 +411,19 @@ img {
 
 .shouye .newest_box dl {
     height: 185px;
+    position: relative;
 }
-
+.shouye .newest_box dl:before {
+    content: '123';
+    width: 1350px;
+    height: 100%;
+    display: block;
+    background-color: pink;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 500;
+}
 .shouye .newest_box dl dt {
     width: 50%;
     float: left;

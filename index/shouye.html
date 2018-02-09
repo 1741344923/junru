@@ -4,7 +4,14 @@
         <meta charset="UTF-8">
         <title>首页</title>
         <link rel="stylesheet" href="../style/common.css">
+        <link rel="stylesheet" href="../style/rScrollAddActive.css">
         <script src="../js/commons/jquery-1.7.2.min.js"></script>
+        <script src="../js/commons/rScrollAddActive.js"></script>
+        <script>
+            $(function(){
+                $('.delay').rScrollAddActive();
+            })
+        </script>
     </head>
     <body>
         <!--头部-->
@@ -70,8 +77,8 @@
             <div class="brief comWidth">
                 <img src="../images/shouye/08.png" alt="">
                 <dl class="clearfix">
-                    <dt><a href=""><img src="../images/shouye/04.png" alt=""></a></dt>
-                    <dd>
+                    <dt class="delay delay-left-to-right"><a href=""><img src="../images/shouye/04.png" alt=""></a></dt>
+                    <dd class="delay delay-right-to-left">
                         <a href="">
                             <h2 style="font-size: 28px;">浙江君如健康管理有限公司</h2>
                             <h3 style="text-align: center;">Brief introduction of company</h3>
@@ -129,7 +136,7 @@
                     <span>news information</span>
                 </div>
             </div>
-            <div class="comWidth newest_box">
+            <div class="comWidth newest_box <!--delay delay-out-to-inner-->">
                 <dl class="clearfix">
                     <dt>
                         <h2>新闻标题新闻标题</h2>
@@ -150,7 +157,7 @@
                         <div>新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容 新闻内容新闻内容</div>
                     </dd>
                 </dl>
-                <dl class="cl">
+                <dl class="cl clearfix">
                     <dt>
                         <h2>新闻标题新闻标题</h2>
                         <div>新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容新闻内容 新闻内容新闻内容</div>
