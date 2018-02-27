@@ -24,11 +24,14 @@
                });*/
 
 
-               $(".header_box ul li").on("click",function () {
-                   if($(this).hasClass("on")){ // 如果有on   表示我现在是减号，点击的时候，我应该变成加号
-                       $(this).removeClass('on');
+               $(".header_box ul li a").on("click",function () {
+                   var li = $(this).closest('li');
+                   if(li.hasClass("on")){ // 如果有on   表示我现在是减号，点击的时候，我应该变成加号
+                       li.removeClass('on');
                    }else{ // 如果没有on   表示我现在是加号，点击的时候，我应该变成减号
-                       $(this).addClass('on');
+                       li.addClass('on');
+                       // 变成减号的同时，让兄弟都变成+号，也就是去掉兄弟li的on，也就是收缩其他的
+                       li.siblings().removeClass('on');
                    }
                });
            });

@@ -113,13 +113,13 @@ img {
 }
 
 .header1 {
-    width: 1400px;
+    width: 1350px;
     margin: 0 auto;
     height: 100%;
 }
 
 .header_left {
-    width: 666px;
+    width: 616px;
     height: 100%;
 }
 
@@ -351,6 +351,7 @@ img {
     border-radius: 6px;
     margin-top: 10px;
     margin-left: 500px;
+    color: #ffff;
 }
 
 /*最新产品*/
@@ -369,24 +370,30 @@ img {
     padding-bottom: 15px;
 }
 
+.shouye .newest1 dl:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.shouye .newest1 dl:hover dd{
+    border-bottom: 1px solid #ec8271;
+}
 .shouye .newest1 dl {
-    width: 440px;
     float: left;
     position: relative;
 }
 
 .shouye .newest1 dl dt {
-    height: 240px;
+    height: 100%;
     width: 100%;
 }
 
 .shouye .newest1 dl dt img {
-    width: 440px;
+    width: 410px;
     background-size: 100% 100%;
 }
 
 .shouye .newest1 dl dd {
-    width: 440px;
+    width: 410px;
     font-size: 16px;
 }
 
@@ -406,38 +413,32 @@ img {
 .shouye .newest1 dl dd img {
     position: absolute;
     right: 10px;
-    bottom: 0;
+    bottom: 10px;
+}
+.shouye .newest_box .newest11{
+     height: 185px;
 }
 
 .shouye .newest_box dl {
-    height: 185px;
-    position: relative;
-}
-.shouye .newest_box dl:before {
-    content: '123';
-    width: 1350px;
     height: 100%;
-    display: block;
-    background-color: pink;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 500;
+    width: 100%;
 }
 .shouye .newest_box dl dt {
     width: 50%;
     float: left;
+    text-align: right;
+    padding-right: 47px;
+    position: relative;
+    height: 100%;
+    padding-top: 45px;
 }
 
 .shouye .newest_box dl dd {
     width: 50%;
     float: left;
-}
-
-.shouye .newest_box dl dt {
-    text-align: right;
-    padding-right: 47px;
-    position: relative;
+    height: 100%;
+    padding-left: 36px;
+    padding-top: 36px;
 }
 
 .shouye .newest_box dl dt:after {
@@ -459,7 +460,30 @@ img {
 .shouye .newest_box dl dt span {
     font-size: 16px;
 }
-
+.shouye .newest_box .newest11{
+    position: relative;
+}
+.shouye .newest_box .active1{
+    background-color: #43b9f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    display: none;
+}
+.shouye .newest_box .active1 dd img{
+    margin-top: 15px;
+    float: left;
+}
+.shouye .newest_box .active1 dd img.mr{
+    margin-right: 25px;
+}
+.shouye .newest_box .newest11:hover .active1{
+    display: block;
+}
+.shouye .newest_box .active1 dt:after{
+    display: none;
+}
 /*走进君如中心部分*/
 .junru {
     font-size: 16px;
@@ -719,7 +743,7 @@ img {
 .talent .talent_right img:after{
     content: '';
     display: block;
-    background: url(../../images/commons/04.png) no-repeat center center;
+    background: url(../images/shouye/04.png) no-repeat center center;
 }
 .talent .talent_right .img1{
     position: absolute;
